@@ -46,7 +46,7 @@ namespace WebScraper//TODO:
                 }
                 else
                 {
-                    Console.WriteLine("There were no elements found in the cetgory list.");
+                    Console.WriteLine("There were no elements found in the category list.");
                     Console.Write("A default category will be chosen for you.");
                 }
                 
