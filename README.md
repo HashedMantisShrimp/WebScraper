@@ -5,7 +5,7 @@ The purpose of this console application is to showcase some of my current knowle
 
 **Short Description**: **WebScraper** is a simple console application that makes use of **Regular Expressions** to scrape **CraigsList** items based on user choice of city and category. 
 
-                                      ---------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
                                                 
 **Detailed Description**: **WebScraper** asks the user to enter the name of the city from which the items will be acquired. Based on the user's city input, the program downloads the webpage's HTML content and matches that content against a **Regex** (Regular Expression) to acquire the available categories. Once found, those categories are displayed to the user and he is asked to pick one.
 After the program acquires the category picked by the user, it builds a link based on the user input and downloads the HTML content within it.
@@ -46,6 +46,6 @@ A **Unit Test** was also built to test the applications main functionality, the 
 **[ScraperTest](https://github.com/PauloB04/WebScraper/blob/master/WebScraper.Test.Unit/Workers/ScraperTest.cs)** Is (at least for now) the one and only **Unit Test Class** of the application, it was created to test the most important part of the business logic, which is the **Scrape** Method contained within the **Scraper** class.
 **ScraperTest** makes two tests with the **Scrape** Method:
 
-**1** It creates a string and then proceeds to build the **ScrapeCriteria** pattern which will be used to find a specific part of the string. Having built the ScrapeCriteria, it then uses the **Scraper** class to find the specified part of the string. It passes the test if the list of matches found contains exactly one element within it and if that element is an exact match to the **expectedElement**.
+**1.** It creates a string and then proceeds to build the **ScrapeCriteria** pattern which will be used to find a specific part of the string. Having built the ScrapeCriteria, it then uses the **Scraper** class to find the specified part of the string. It passes the test if the list of matches found contains exactly one element within it and if that element is an exact match to the **expectedElement**.
 
-**2** It creates another string and then proceeds to build the **ScrapeCriteria** pattern, the difference being that this ScrapeCriteria pattern also contains two **ScraperCriteriaParts**, they in turn, will be used to find two even more specific parts within the match found with the **ScrapeCriteria**. Having built the ScrapeCriteria, it then uses the **Scraper** class to find the specified part of the string. It passes the test if the list of matches found contains exactly two elements within it and if those elements are an exact match to the **expectedElements**.
+**2.** It creates another string and then proceeds to build the **ScrapeCriteria** pattern, the difference being that this ScrapeCriteria pattern also contains two **ScraperCriteriaParts**, they in turn, will be used to find two even more specific parts within the match found with the **ScrapeCriteria**. Having built the ScrapeCriteria, it then uses the **Scraper** class to find the specified part of the string. It passes the test if the list of matches found contains exactly two elements within it and if those elements are an exact match to the **expectedElements**.
