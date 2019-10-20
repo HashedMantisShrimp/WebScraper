@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebScraper.Builders;
@@ -13,7 +13,7 @@ namespace WebScraper.Test.Unit
         private readonly Scraper _scraper = new Scraper();
 
         [TestMethod]
-        public void ScraperTakesNoPart_ReturnsWholeAnchorTag()
+        public void ScraperTakesNoParts_ReturnsWholeAnchorTag()
         {
             string content = "Some data present here <a href=\"anysite.com\" class=\"anyClass\"> Content within tag </a>";
 
